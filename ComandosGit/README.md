@@ -74,12 +74,13 @@
 ```git restore --staged <nome_arquivo>```
 ### Mostra as diferenças entre as alterações ainda não adicionadas nos índices:
 ```git diff```
-### Mostra as diferenças entre as alterações do arquivos na área de staging:
+### Mostra as diferenças entre as alterações dos arquivos na área de staging:
 ```git diff --staged```
 ### Adiciona repositório remoto com um nome específico no repositório local:
-```git remote add <nome_repositório_remoto> <URL>```
+```git remote add <nome_desejado_repositório> <URL>```
 ### Envia alterações locais para o repositório remoto:
-```git push add origin main```
+```git push add origin main``` ou
+```git push add <nome_repositório> <nome_branch>```
 
 
 
