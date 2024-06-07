@@ -18,9 +18,9 @@
 ## - Configurando o Git:
 
 ### Cria o nome:
-```git config –global user.name <nome>```
+```git config -–global user.name <nome>```
 ### Coloca o e-mail:
-```git config –global user.email <email>```
+```git config -–global user.email <email>```
 ### Verifica lista de configurações do Git:
 ```git config --list```
 ### Retorna a versão do Git se estiver instalado
