@@ -5,7 +5,7 @@
 | Estado | Descrição |
 |-------------|------------------------------------------------------------------------|
 | Untracked | É o arquivo criado, mas não rastreado pelo git (não passou pelo git add).|
-| Unmodified | É o arquivo que passou pelo git add e commit, mas que apois isso não foi modificado.|
+| Unmodified | É o arquivo que passou pelo git add e commit, mas que após isso não foi modificado.|
 | Modified | É o arquivo que já havia passado pelo commit e sofreu uma alteração.|
 | Staged | É o arquivo que passou pelo git add e está pronto para o commit.|
 
@@ -23,12 +23,12 @@
 ```git config -–global user.email <email>```
 ### Verifica lista de configurações do Git:
 ```git config --list```
-### Retorna a versão do Git se estiver instalado
+### Retorna a versão do Git se estiver instalado:
 ```git --version```
 
 ## - Principais comandos do Git:
 
-### Cria um repositório local
+### Cria um repositório local:
 ```git init```
 ### Clona um repositório remoto para o local:
 ```git clone <URL>```
@@ -41,6 +41,8 @@
 ```git status```
 ### Mostra o histórico de commits:
 ```git log```
+### Mostra em que branch estamos e os commits:
+```git log --oneline --decorate```
 ### Lista todas as branchs locais e destaca a atual:
 ```git branch```
 ### Cria uma branch:
@@ -49,14 +51,19 @@
 ```git checkout <nome_branch>```
 ### Combina as alterações de uma branch com a atual:
 ```git merge <nome_branch>```
-### Atualiza repositório local com o remoto:
+### Delete uma branch local:
+```git branch <nome_branch> -D```
+### Delate uma branch remota:
+```git push origin --delete <nome_branch_remota>``` 
+### Atualiza repositório local com o remoto (com um merge):
 ```git pull```
+### Recupera as últimas alterações do repositório remoto (sem merge automático), permitindo ver as diferenças entre o repositório remoto e o local antes de alterar o local:
+```git fetch``` após isso, usa o diff <br>
+```git diff <nome_repositório> <nome_branch>``` se quiser modificar, pode fazer um git pull.
 ### Envia os commits para o repositório remoto:
 ```git push <nome_repositório_remoto> <nome_branch>```
 ### Lista os repositórios remotos configurados:
 ```git remote -v```
-### Recupera as últimas alterações do repositório remoto, sem merge automático:
-```git fetch```
 ### Desfaz alterações de arquivo específico, removendo do índice:
 ```git reset <nome_arquivo>```
 ### Remove arquivo de um repositório e inclui no próximo commit:
