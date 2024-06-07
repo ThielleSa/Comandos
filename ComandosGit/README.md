@@ -62,6 +62,8 @@
 ```git rm <nome_arquivo>```
 ### Mostra as diferenças entre as alterações ainda não adicionadas nos índices:
 ```git diff```
+### Mostra as diferenças entre as alterações do arquivos na área de staged:
+```git diff --staged```
 ### Adiciona repositório remoto com um nome específico no repositório local:
 ```git remote add <nome_repositório_remoto> <URL>```
 ### Envia alterações locais para o repositório remoto:
