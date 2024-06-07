@@ -31,9 +31,10 @@
 ### Cria um repositório local
 ```git init```
 ### Clona um repositório remoto para o local:
-```git clone```
+```git clone <URL>```
 ### Prepara o arquivo (staging area) para o commit:
-```git add .```
+```git add .``` ou  
+```git add .\<nome_arquivo>```
 ### Envia o arquivo (staged) para o repositório local:
 ```git commit -m <mensagem>```
 ### Exibe o estado atual do repositório:
@@ -44,7 +45,7 @@
 ```git branch```
 ### Cria uma branch:
 ```git branch <nome_branch>```
-### Altera para uma branche específica:
+### Altera para uma branch específica:
 ```git checkout <nome_branch>```
 ### Combina as alterações de uma branch com a atual:
 ```git merge <nome_branch>```
@@ -60,15 +61,18 @@
 ```git reset <nome_arquivo>```
 ### Remove arquivo de um repositório e inclui no próximo commit:
 ```git rm <nome_arquivo>```
+### Remove alterações do arquivo:
+```git restore <nome_arquivo>```
+### Remove o arquivo da área de staging:
+```git restore --staged <nome_arquivo>```
 ### Mostra as diferenças entre as alterações ainda não adicionadas nos índices:
 ```git diff```
-### Mostra as diferenças entre as alterações do arquivos na área de staged:
+### Mostra as diferenças entre as alterações do arquivos na área de staging:
 ```git diff --staged```
 ### Adiciona repositório remoto com um nome específico no repositório local:
 ```git remote add <nome_repositório_remoto> <URL>```
 ### Envia alterações locais para o repositório remoto:
 ```git push add origin main```
-
 
 
 
