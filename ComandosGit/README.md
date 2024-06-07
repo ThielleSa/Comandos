@@ -51,9 +51,9 @@
 ```git checkout <nome_branch>```
 ### Combina as alterações de uma branch com a atual:
 ```git merge <nome_branch>```
-### Delete uma branch local:
+### Deleta uma branch local:
 ```git branch <nome_branch> -D```
-### Delate uma branch remota:
+### Deleta uma branch remota:
 ```git push origin --delete <nome_branch_remota>``` 
 ### Atualiza repositório local com o remoto (com um merge):
 ```git pull```
